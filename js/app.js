@@ -40,6 +40,7 @@ const carroHTML = (producto) => {
     
     return dropdown;
 };
+
 const mostrarProductos = () => {
     const catalogo = document.getElementById("lista");
     let listaHTML = "";
@@ -52,10 +53,12 @@ const mostrarProductos = () => {
 const mostrarCarrito = () => {
     const listaCarrito = document.getElementById("carrito");
     const precioTotal = document.getElementById("precioTotal");
-
+    const guardarCarrito = (lista, producto) => { localStorage.setItem(lista, producto) };
+    guardarCarrito("listaCarrito", JSON.stringify(carrito));
+    const listaGuardada = JSON.parse(localStorage.getItem("listaCarrito"));
     let carritoHTML = "";
     let precio = 0;
-    for (const producto of carrito) {
+    for (const producto of listaGuardada) {
         carritoHTML += carroHTML(producto);
         precio += producto.precio;
     }
@@ -64,6 +67,7 @@ const mostrarCarrito = () => {
     
     botonesCarrito();
 };
+
 const buttonsLista = () => {
     for (const producto of productos) {
         const botonId = `boton-${producto.id}`;
@@ -100,16 +104,16 @@ const botonesCarrito = () => {
 
 mostrarProductos();
 
-const btnFinalizar = document.getElementById("finalizarCompra");
-btnFinalizar.addEventListener("click", () => {
-    let total = 0;
-    for (const producto of carrito) {
-        total += producto.precio;
-    }
-    console.log(total);
-    btnFinalizar.insertAdjacentHTML("beforebegin", `<p>El total de su compra es:$${total}</p>`);
+// const btnFinalizar = document.getElementById("finalizarCompra");
+// btnFinalizar.addEventListener("click", () => {
+//     let total = 0;
+//     for (const producto of carrito) {
+//         total += producto.precio;
+//     }
+//     console.log(total);
+//     btnFinalizar.insertAdjacentHTML("beforebegin", `<p>El total de su compra es:$${total}</p>`);
 
-})
+// })
 
 
 
