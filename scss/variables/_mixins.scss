@@ -1,0 +1,5 @@
+@mixin colorTitulos ($colorInicial, $colorFinal, $colorTexto){
+    background-image: linear-gradient(to top, $colorInicial, $colorFinal);
+    color: $colorTexto;
+    
+}

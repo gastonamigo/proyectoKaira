@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    .menuFooter {
+        a {
+            color: $celeste;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+
+            &:hover {
+                color: $azul;
+                font-weight: 900;
+            }
+        
+        }
+
+        
+
+        li {
+            list-style: none;
+            padding: 1rem;
+            display: inline-block;
+        }
+    }
+
+}

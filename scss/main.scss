@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import'./variables/colores';
+@import'./variables/tipografia';
+@import'./variables/extend';
+@import'./variables/mixins';
+
+@import'./secciones/header';
+@import'./secciones/index';
+@import'./secciones/footer';
+@import'./secciones/tarjetas';
+@import'./secciones/contacto';
+
+// titulo productos
+.titulo {
+    display: flex;
+    @include colorTitulos($azul, $celeste, white);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulodescargas {
+    display: inline;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        @include colorTitulos($azul, $celeste, white);
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        @include colorTitulos(rgba(180, 177, 177, 0.993), rgb(128, 128, 128), white);
+        font-size: 2rem;
+    }
+}
+
+.nosotros {
+    display: flex;
+    border: $azul 1rem solid;
+    margin: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 6rem;
+    justify-content: center;
+    color: #1b4174;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2rem;
+    background-color: rgb(163, 204, 238);
+}
+
+.main {
+    background-image: url(../img/fondoabstracto.jpg);
+    background-size: cover;
+    min-height: 85vh;
+
+}
+.mainContacto{
+    min-height: 80vh;
+    background-color: whitesmoke;
+}
+
+.mainSoporte {
+    background-image: url(../img/fondoabstracto2.jpg);
+    background-size: cover;
+
+}
+
+@media (max-width: 768px) {
+
+    .section1,
+    .section2 {
+        font-size: 1.7rem;
+    }
+
+    .nosotros {
+        padding: 3rem;
+        margin: 3rem;
+        border: $azul .5rem solid;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .titulodescargas {
+
+        h1,
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .header .brand {
+        font-size: 1.5rem;
+    }
+
+    .section1,
+    .section2 {
+        font-size: 1.5rem;
+    }
+
+    .titulodescargas {
+
+        h1,
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nosotros {
+        padding: 2rem;
+        margin: 2rem;
+        border: $azul .2rem solid;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        ul{
+            padding: .5rem;
+        }
+        .menuFooter {
+            a {
+                font-size: 0.8rem;
+            }
+
+            li {
+                padding: .1rem;
+            }
+        }
+    }
+
+
+}

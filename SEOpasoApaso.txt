@@ -1,0 +1,19 @@
+En index.html se agrego la siguiente descripcion "Somos un empresa dedicada a la venta de las impresoras 3D mas vendidas del mercado con un gran soporte tecnico"
+Tambien keywords:"mpresora 3D, filamentos, PLA, FDM, Creality"
+Se modifico el titulo:"Kaira Printers - Encuentra las herramientas que buscas"
+
+En products.html se agrego la siguiente descripcion "Aqui podras encontrar esa impresora que tanto estas buscando, comoda, practica y facil de usar"
+keywords: "impresora 3D, filamentos, PLA, FDM, Creality, cr10, ender-3, cr5, Ender-2"
+Se modifico el titulo: "Productos - Elije tu proxima impresora 3D"
+
+En soporte.html se agrego la siguente descripcion "Te damos la solucion ante cualquier inconveniente que tengas con tu equipo como asi tambien tenemos todos los driver y manuales de las impresoras que vendemos, ender2 pro, ender 3 v2, cr10, cr5"
+keywords: "impresora 3D, Creality, cr10, ender-3, cr5, Ender-2, Firmware, Manual"
+Se modifico el titulo:"Soporte - Software & manuals"
+
+En nosotros.html se agrego la siguente descripcion "Conoce nuestra pequeña de historia de como nacimos y que nos motivo por llegar hasta aqui"
+keywords: "impresora 3D, Creality, reseller, venta"
+Se modifico el titulo: "Nosotros - Quienes Somos"
+
+En contacto.html se agrego la siguente descripcion "Puedes ponerte en contacto con nosotros por cualquier inquietud que tengas"
+keywords: "impresora 3D, Creality, reseller, venta, soporte tecnico"
+Se modifico el titulo: "Contacto - Dejanos tu consulta"

@@ -1,0 +1,34 @@
+%styleBtn{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 $celeste;
+    background-color: $azul;
+    transition: all 0.2;
+
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+
+    &:hover{
+        transform: translateY(1px);
+        box-shadow: 0 2px 0 $celeste;
+    }
+}
+%seccion{
+    display: flex;
+    font-size: 3rem;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+    color: #d0ebf5;
+    font-family: $baloo;
+    text-shadow: 2px 2px 0 black;
+    
+}

@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+
+    .nav-item {
+        display: flex;
+        margin-bottom: 0px;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-size: 1.2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        a {
+            color: $celeste;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+                color: $azul;
+                font-weight: 900;
+            }
+        
+        }
+        .dropdown-menu{
+            font-size: 0.8rem;
+            li{
+                
+                color: $celeste;                              
+                font-family: "M PLUS Rounded 1c", sans-serif;
+                padding-left: 5px;
+            }
+        }
+
+        .buttonQuitar{
+            @extend %styleBtn;
+            margin-left: 0.5rem;
+            padding: 4px;
+            font-size: 10px;
+            background-color: red;
+            
+        }
+
+        
+    }
+
+    .logo {
+        transition: all 0.5s;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    
+    }
+
+    
+
+    .brand {
+        color: $celeste;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        display: flex;
+        font-size: 2rem;
+        align-items: center;
+
+        &:hover {
+            color: #5a91df;
+        }
+    }
+
+    
+}

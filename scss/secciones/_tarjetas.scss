@@ -1,0 +1,20 @@
+.card {
+    border:$azul 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+
+    .card-body {
+        font-family: $baloo;
+        
+            .buttonComprar {
+            @extend %styleBtn;
+            padding: 8px;
+           
+       }
+
+       
+       
+    }
+}

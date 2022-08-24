@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.header .nav-item .buttonQuitar, .card .card-body .buttonComprar, .contacto .formulario .submit {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #0096c7;
+  background-color: #023e8a;
+  transition: all 0.2;
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
+  text-decoration: none; }
+  .header .nav-item .buttonQuitar:hover, .card .card-body .buttonComprar:hover, .contacto .formulario .submit:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #0096c7; }
+
+.section1, .section2 {
+  display: flex;
+  font-size: 3rem;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #d0ebf5;
+  font-family: "Baloo 2", cursive;
+  text-shadow: 2px 2px 0 black; }
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%; }
+  .header .nav-item {
+    display: flex;
+    margin-bottom: 0px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    .header .nav-item a {
+      color: #0096c7;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .header .nav-item a:hover {
+        color: #023e8a;
+        font-weight: 900; }
+    .header .nav-item .dropdown-menu {
+      font-size: 0.8rem; }
+      .header .nav-item .dropdown-menu li {
+        color: #0096c7;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        padding-left: 5px; }
+    .header .nav-item .buttonQuitar {
+      margin-left: 0.5rem;
+      padding: 4px;
+      font-size: 10px;
+      background-color: red; }
+  .header .logo {
+    transition: all 0.5s;
+    justify-content: center; }
+    .header .logo:hover {
+      transform: scale(1.1); }
+  .header .brand {
+    color: #0096c7;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    font-size: 2rem;
+    align-items: center; }
+    .header .brand:hover {
+      color: #5a91df; }
+
+.section1 {
+  background-image: url(../img/fondoInicio.jpg); }
+
+.section2 {
+  background-image: url(../img/fondoInicio2.jpg); }
+
+.footer {
+  display: flex;
+  justify-content: center; }
+  .footer .menuFooter a {
+    color: #0096c7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c", sans-serif; }
+    .footer .menuFooter a:hover {
+      color: #023e8a;
+      font-weight: 900; }
+  .footer .menuFooter li {
+    list-style: none;
+    padding: 1rem;
+    display: inline-block; }
+
+.card {
+  border: #023e8a 1px solid;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white; }
+  .card .card-body {
+    font-family: "Baloo 2", cursive; }
+    .card .card-body .buttonComprar {
+      padding: 8px; }
+
+.contacto {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center; }
+  .contacto .infoContactos {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 15px;
+    color: #0096c7;
+    font-family: "M PLUS Rounded 1c", sans-serif; }
+    .contacto .infoContactos ul {
+      padding: 0; }
+    .contacto .infoContactos li {
+      list-style: none;
+      padding: 1rem; }
+    .contacto .infoContactos h1 {
+      margin: 10px; }
+  .contacto .formulario {
+    font-family: 'M PLUS Rounded 1c', sans-serif; }
+    .contacto .formulario .submit {
+      padding: .5rem; }
+
+.titulo {
+  display: flex;
+  background-image: linear-gradient(to top, #023e8a, #0096c7);
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  width: 100%; }
+
+.titulodescargas {
+  display: inline;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center; }
+  .titulodescargas h1 {
+    background-image: linear-gradient(to top, #023e8a, #0096c7);
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0; }
+  .titulodescargas p {
+    background-image: linear-gradient(to top, rgba(180, 177, 177, 0.993), gray);
+    color: white;
+    font-size: 2rem; }
+
+.nosotros {
+  display: flex;
+  border: #023e8a 1rem solid;
+  margin: 6rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 6rem;
+  justify-content: center;
+  color: #1b4174;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 2rem;
+  background-color: #a3ccee; }
+
+.main {
+  background-image: url(../img/fondoabstracto.jpg);
+  background-size: cover;
+  min-height: 85vh; }
+
+.mainContacto {
+  min-height: 80vh;
+  background-color: whitesmoke; }
+
+.mainSoporte {
+  background-image: url(../img/fondoabstracto2.jpg);
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  .section1,
+  .section2 {
+    font-size: 1.7rem; }
+  .nosotros {
+    padding: 3rem;
+    margin: 3rem;
+    border: #023e8a 0.5rem solid; }
+    .nosotros p {
+      font-size: 1.5rem; }
+  .titulodescargas h1,
+  .titulodescargas p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 425px) {
+  .header .brand {
+    font-size: 1.5rem; }
+  .section1,
+  .section2 {
+    font-size: 1.5rem; }
+  .titulodescargas h1,
+  .titulodescargas p {
+    font-size: 1.5rem; }
+  .nosotros {
+    padding: 2rem;
+    margin: 2rem;
+    border: #023e8a 0.2rem solid; }
+    .nosotros p {
+      font-size: 1rem; }
+  .contacto {
+    flex-direction: column;
+    align-items: center; }
+  .footer ul {
+    padding: .5rem; }
+  .footer .menuFooter a {
+    font-size: 0.8rem; }
+  .footer .menuFooter li {
+    padding: .1rem; } }

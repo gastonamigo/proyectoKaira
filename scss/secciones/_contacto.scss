@@ -1,0 +1,45 @@
+.contacto {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+   
+
+    .infoContactos {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 50px;
+        padding: 15px;
+        color: $celeste;
+        font-family: $redondeada;
+        ul{
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+    }
+
+    .formulario {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+       
+        .submit {
+            padding: .5rem;
+            @extend %styleBtn;
+               
+        }
+
+
+        
+    }
+
+}
