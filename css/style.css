@@ -139,6 +139,11 @@
     .contacto .formulario .submit {
       padding: .5rem; }
 
+.toastify {
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #023e8a, #0096c7);
+  color: white; }
+
 .titulo {
   display: flex;
   background-image: linear-gradient(to top, #023e8a, #0096c7);

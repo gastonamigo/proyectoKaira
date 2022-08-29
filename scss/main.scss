@@ -15,6 +15,12 @@
 @import'./secciones/contacto';
 
 // titulo productos
+.toastify {
+    
+    border-radius: 15px;
+    @include colorTitulos ($azul, $celeste, white);
+   }
+  
 .titulo {
     display: flex;
     @include colorTitulos($azul, $celeste, white);

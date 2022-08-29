@@ -41,6 +41,17 @@ productos.forEach((producto)=>{
      
      
      boton.addEventListener('click', () => {
+        Toastify({
+
+            text: `Agregaste al Carrito 1 ${producto.nombre}`,
+            
+            duration: 3000,
+            
+            gravity:'top',
+
+            position:'right',
+
+            }).showToast();
         agregarAlcarrito(producto.id);
      })
 })
@@ -56,9 +67,7 @@ const agregarAlcarrito = (prodId) =>{
     const existe = carrito.some (prod => prod.id === prodId);
     if(existe){
         const prod = carrito.map(prod => {
-            if(prod.id === prodId){
-                prod.cantidad++;
-            }
+            prod.id === prodId && prod.cantidad++;           
         })
     } else {
     const item = productos.find ((prod) => prod.id === prodId);
@@ -78,7 +87,7 @@ const actualizarCarrito = () => {
      localStorage.setItem('carrito', JSON.stringify(carrito));
     })
     //contadorCarrito.innerText = carrito.length;
-    precioTotal.innerText = carrito.reduce((acc, prod)=> acc + prod.precio, 0);
+    precioTotal.innerText = carrito.reduce((acc, prod)=> acc + (prod.cantidad * prod.precio), 0);
 }
 
 
