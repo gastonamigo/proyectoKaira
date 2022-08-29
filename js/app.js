@@ -85,6 +85,7 @@ const actualizarCarrito = () => {
      `;
      contenedorCarrito.appendChild(dropdown);
      localStorage.setItem('carrito', JSON.stringify(carrito));
+     console.log(...carrito); //Este spread es solo para probar este operador
     })
     //contadorCarrito.innerText = carrito.length;
     precioTotal.innerText = carrito.reduce((acc, prod)=> acc + (prod.cantidad * prod.precio), 0);
