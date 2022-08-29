@@ -67,7 +67,7 @@ const agregarAlcarrito = (prodId) =>{
     const existe = carrito.some (prod => prod.id === prodId);
     if(existe){
         const prod = carrito.map(prod => {
-            prod.id === prodId && prod.cantidad++;           
+            prod.id === prodId && prod.cantidad++;  
         })
     } else {
     const item = productos.find ((prod) => prod.id === prodId);
