@@ -67,7 +67,7 @@ const agregarAlcarrito = (prodId) =>{
     const existe = carrito.some (prod => prod.id === prodId);
     if(existe){
         const prod = carrito.map(prod => {
-            prod.id === prodId && prod.cantidad++;  
+            prod.id === prodId && prod.cantidad++;  // operador logico and
         })
     } else {
     const item = productos.find ((prod) => prod.id === prodId);
@@ -88,7 +88,7 @@ const actualizarCarrito = () => {
      console.log(...carrito); //Este spread es solo para probar este operador
     })
     //contadorCarrito.innerText = carrito.length;
-    precioTotal.innerText = carrito.reduce((acc, prod)=> acc + (prod.cantidad * prod.precio), 0);
+    precioTotal.innerText = carrito.reduce((acc, prod)=> acc + (prod.cantidad * prod.precio), 0); // reset parameters
 }
 
 
